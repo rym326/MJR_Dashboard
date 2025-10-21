@@ -24,9 +24,17 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-      .block-container {padding-top: 1.5rem; padding-bottom: 2rem; max-width: 1200px;}
-      .metric-card {border:1px solid #eaeaea; border-radius:16px; padding:16px; background:#fff;}
-      .stDataFrame {border-radius: 12px; overflow: hidden;}
+        .block-container {
+            padding-top: 1.5rem;
+            padding-bottom: 2rem;
+            max-width: 1200px;
+        }
+        .metric-card {
+            border: 1px solid #eaeaea;
+            border-radius: 16px;
+            padding: 16px;
+            background: #ffffff;
+        }
     </style>
     """,
     unsafe_allow_html=True
