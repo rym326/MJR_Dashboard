@@ -1,8 +1,3 @@
-# Create Streamlit finance dashboard files for the user
-
-from textwrap import dedent
-
-app_code = dedent(r"""
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -300,9 +295,7 @@ with tab4:
             st.download_button("Download Cumulative Returns (CSV)", to_csv_bytes(cum), file_name="cumulative_returns.csv")
     else:
         st.info("Enable downloads in the sidebar to export data.")
-""")
 
-reqs = dedent("""
 streamlit>=1.36
 pandas>=2.0
 numpy>=1.24
