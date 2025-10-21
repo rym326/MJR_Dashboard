@@ -20,25 +20,24 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Minimal professional style tweaks
-st.markdown(
-    """
+# ✅ FIXED CSS BLOCK
+st.markdown("""
     <style>
         .block-container {
             padding-top: 1.5rem;
             padding-bottom: 2rem;
             max-width: 1200px;
+            margin: auto;
         }
         .metric-card {
             border: 1px solid #eaeaea;
             border-radius: 16px;
             padding: 16px;
-            background: #ffffff;
+            background: white;
         }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
+
 
 # -------------------------
 # Helpers
