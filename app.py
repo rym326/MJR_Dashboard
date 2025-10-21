@@ -295,27 +295,3 @@ with tab4:
             st.download_button("Download Cumulative Returns (CSV)", to_csv_bytes(cum), file_name="cumulative_returns.csv")
     else:
         st.info("Enable downloads in the sidebar to export data.")
-
-streamlit>=1.36
-pandas>=2.0
-numpy>=1.24
-yfinance>=0.2.40
-altair>=5.0
-""")
-
-readme = dedent(r"""
-# Finance Dashboard (Streamlit)
-
-A minimal, professional **finance dashboard** built with Streamlit and Yahoo Finance.
-
-## Features
-- Enter or select tickers; choose date range
-- Price chart, normalized cumulative returns
-- Daily return correlations (table + heatmap)
-- Fundamentals snapshot + financial statements (where available)
-- Optional CSV downloads (prices, daily returns, cumulative returns)
-
-## Run locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
